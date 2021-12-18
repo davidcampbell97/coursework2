@@ -30,7 +30,7 @@ node {
 stage('Push image') {
         withDockerRegistry([ credentialsId: "docker-hub-credentials", url: "" ]) {
         bat "docker push dcampbell97/coursework2:build"
-        }
+        
         }
     }
 }
